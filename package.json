@@ -1,5 +1,5 @@
 {
-  "name": "alpha_storage",
+  "name": "adorable_library",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "framer-motion": "^11.11.10",
+    "lottie-react": "^2.4.0",
     "next": "14.2.14",
     "next-i18n-router": "^5.5.1",
     "next-intl": "^3.20.0",

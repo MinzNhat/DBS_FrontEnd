@@ -3,10 +3,10 @@ import "./[locale]/globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: 'Alpha Storage',
+  title: 'Adorable Library',
   description: 'The remedy to the challenge of storage',
-  applicationName: 'Alpha Storage Solution',
-  keywords: ["react", "server components", 'nextjs', 'tailwind', 'storage', 'alphastorage'],
+  applicationName: 'Adorable Library Solution',
+  keywords: ["react", "server components", 'nextjs', 'tailwind', 'adorable', 'library', 'adorable library'],
   icons: [{ rel: "favicon", type: 'image/ico', url: "/favicon.ico" }],
   generator: 'nhatdev',
   authors: [{ name: 'nhatdev' }],

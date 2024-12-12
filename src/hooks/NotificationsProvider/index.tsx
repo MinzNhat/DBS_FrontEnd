@@ -1,3 +1,4 @@
+import Notifications from "@/components/notifications";
 import { generateNotificationId } from '@/utils/generateRandomId';
 import React, { createContext, useContext, useReducer, ReactNode } from 'react';
 
@@ -45,6 +46,7 @@ export const NotificationsProvider = ({ children }: { children: ReactNode }) => 
 
     return (
         <NotificationsContext.Provider value={{ state, addNotification, removeNotification }}>
+            <Notifications />
             {children}
         </NotificationsContext.Provider>
     );

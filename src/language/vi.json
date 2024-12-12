@@ -7,6 +7,11 @@
         "DefaultCloseButton": "Đóng",
         "DefaultSubmitButton": "Xác nhận"
     },
+    "TableCustomButton": {
+        "Add": "Thêm",
+        "Delete": "Xoá",
+        "Reload": "Tải lại"
+    },
     "InputField": {
         "DefaultSelectPlaceHolder": "Chọn...",
         "DefaultSelectNoOptions": "Không có lựa chọn phù hợp",
@@ -17,6 +22,34 @@
         "DefaultSearchPlaceHolder": "Tìm...",
         "DefaultPageMessage": "Vui lòng nhập trang muốn đến",
         "DefaultSizePerPage": "Hiển thị:",
-        "DefaultNoDataMessage": "Không có dữ liệu"
+        "DefaultNoDataMessage": "Không có dữ liệu",
+        "DefaultNoDataValue": "Không có thông tin"
+    },
+    "Navbar": {
+        "Search": "Tìm kiếm...",
+        "Login": "Đang đăng nhập bằng",
+        "ViewInfo": "Xem thông tin",
+        "ChangePass": "Đổi mật khẩu",
+        "Logout": "Đăng xuất",
+        "LogoutMessage": "Xác nhận thoát phiên đăng nhập?",
+        "InfoTitle": "Thông tin tài khoản"
+    },
+    "Routes": {
+        "orders": "Đơn hàng",
+        "products": "Sản phẩm",
+        "customer": "Khách hàng",
+        "staffs": "Nhân viên",
+        "card": "Thẻ thành viên",
+        "management": "Quản lý",
+        "interior": "Nội vụ",
+        "home": "Trang chủ"
+    },
+    "ProductsRoute": {
+        "ma_san_pham": "Mã sản phẩm",
+        "ten_san_pham": "Tên sản phẩm",
+        "danh_muc": "Danh mục",
+        "gia_niem_yet": "Giá niêm yết",
+        "so_luong_kha_dung": "Số lượng khả dụng",
+        "so_luong_ban": "Số lượng bán"
     }
 }

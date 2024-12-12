@@ -1,10 +1,10 @@
-# Dự Án Alpha Storage
+# Dự Án Adorable Library
 
-Chào mừng bạn đến với dự án Alpha Storage! Dưới đây là cấu trúc thư mục của dự án cùng với các mô tả chi tiết về từng thư mục:
+Chào mừng bạn đến với dự án Adorable Library! Dưới đây là cấu trúc thư mục của dự án cùng với các mô tả chi tiết về từng thư mục:
 
 ## Cấu trúc Thư mục
 
-Alpha_Storage
+Adorable_Library
 
 ├── public/               # Các tài nguyên tĩnh (hình ảnh, fonts, v.v.) sẽ được phục vụ trực tiếp
 
@@ -31,6 +31,8 @@ Alpha_Storage
 │   ├── utils/            # Các hàm tiện ích khác, không thuộc thư viện chính
 
 │   └── views/            # Các thành phần giao diện lớn, kết hợp các components nhỏ
+
+│   └── variables/        # Lưu trữ các biến local có dữ liệu lớn
 
 ├── .env.local            # Các biến môi trường cho cấu hình local
 
@@ -86,12 +88,13 @@ Dự án sẽ chạy tại http://localhost:3003.
 
 ## Tài liệu chung (Document) cho dự án
 
-**Chuyển sang branch Document để xem cách sử dụng của các global component, style code**
+**Không có**
 
 ## Document về animation
 
 Học cách sử dụng ở trên trang web https://animation.ibelick.com
 
+> [!Warning]
 > ⚠️ **Quy định trước khi code**
 > 
 > 1. **Pull code mới nhất về**:  
