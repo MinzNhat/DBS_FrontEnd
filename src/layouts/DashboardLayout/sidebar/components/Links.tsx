@@ -93,7 +93,7 @@ const SidebarLinks = ({ onClickRoute }: Props) => {
     return (
       <>
         {renderLinks(managementRoutes, 0, intl("management"))}
-        {renderLinks(interiorRoutes, managementRoutes.length, intl("interior"))}
+        {/* {renderLinks(interiorRoutes, managementRoutes.length, intl("interior"))} */}
         {indicatorPosition &&
           <div
             className="h-8 w-1 rounded-lg bg-blue-500 dark:bg-blue-500 transition-all duration-500 ease-in-out"

@@ -25,7 +25,7 @@ const LandingPage = () => {
 
     const handleNextClick = () => {
         setLoading(true);
-        router.push("/orders");
+        router.push("/products");
     }
 
     useEffect(() => {

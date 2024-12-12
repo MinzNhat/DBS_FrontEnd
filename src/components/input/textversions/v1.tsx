@@ -32,12 +32,14 @@ const TextInputV1 = ({
         }
     };
 
-    const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, type: string, setValue: (_value: string) => void, blur?: boolean) => {
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, type: string, setValue: (_value: string | number) => void, blur?: boolean) => {
         const inputValue = e.target.value;
         if (type === "date" && inputValue.split('-')[0]?.length > 4) {
             const parts = inputValue.split('-');
             parts[0] = parts[0].substring(0, 4);
             setValue(parts.reverse().join('/'));
+        } else if (type === "number") {
+            setValue(parseFloat(inputValue));
         } else if (!blur) {
             setValue(inputValue);
         }
@@ -71,8 +73,8 @@ const TextInputV1 = ({
                         onBlur={(e) => handleInputChange(e, type, setValue, true)}
                         value={type === "date" ? value.split('/').reverse().join('-') : value}
                         placeholder={type === "date" ? "" : (placeholder ? placeholder : disabled ? "" : InputFieldMessage('DefaultTextPlaceHolder'))}
-                        className={`p-2 px-3 text-left border rounded-md w-full dark:bg-darkContainerPrimary
-                        focus:outline-none flex justify-between place-items-center hide-calendar-icon no-spin-button
+                        className={`p-2 px-3 appearance-none border rounded-md w-full dark:bg-darkContainerPrimary
+                        focus:outline-none flex justify-between place-items-left hide-calendar-icon no-spin-button
                         ${inputClassName}
                         ${disabled
                                 ? "!border-none !bg-gray-100 dark:!bg-white/5 dark:placeholder:!text-[rgba(255,255,255,0.15)]"

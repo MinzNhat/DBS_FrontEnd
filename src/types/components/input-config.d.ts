@@ -1,4 +1,4 @@
-declare type TextInputVersion = '1'|'2';
+declare type TextInputVersion = '1' | '2';
 
 declare type SelectInputVersion = '1';
 
@@ -6,9 +6,9 @@ declare type SelectInputType = 'single' | 'multi';
 
 declare type InputState = 'error' | 'success' | 'default';
 
-declare type InputTypes = 'select' | 'text' | 'number' | 'password' | 'date' | 'text-area'| 'email';
+declare type InputTypes = 'select' | 'text' | 'number' | 'password' | 'date' | 'text-area' | 'email';
 
-declare type BaseInputProps<T extends InputTypes, V extends T extends 'select' ? string[] : string> = {
+declare type BaseInputProps<T extends InputTypes, V extends T extends 'select' ? string[] : string | number> = {
     type: T;
     version?: T extends 'select' ? SelectInputVersion : TextInputVersion;
 

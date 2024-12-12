@@ -6,27 +6,23 @@ export const columnsData = (): Column<ProductData>[] => {
 
     return [
         {
-            Header: intl("id"),
-            accessor: "ma_san_pham",
-        },
-        {
-            Header: intl("detailSource"),
+            Header: intl("ten_san_pham"),
             accessor: "ten_san_pham",
         },
         {
-            Header: intl("detailDest"),
+            Header: intl("danh_muc"),
             accessor: "danh_muc",
         },
         {
-            Header: intl("statusCode"),
+            Header: intl("gia_niem_yet"),
             accessor: "gia_niem_yet",
         },
         {
-            Header: intl("statusCode"),
+            Header: intl("so_luong_kha_dung"),
             accessor: "so_luong_kha_dung",
         },
         {
-            Header: intl("statusCode"),
+            Header: intl("so_luong_ban"),
             accessor: "so_luong_ban",
         },
     ];

@@ -5,14 +5,14 @@ import { useTranslations } from "next-intl";
 import RenderCase from "@/components/render";
 import { MdRestartAlt, MdOutlineAddCircleOutline, MdOutlineRemoveCircleOutline } from "react-icons/md";
 
-interface CustomButtonProps {
+interface CustomButtonTableProps {
     fetchData: () => void;
     selectedRows?: unknown[];
     openAdd?: () => void;
     handleDelete?: () => void;
 }
 
-const CustomButton = ({ fetchData, selectedRows, openAdd, handleDelete }: CustomButtonProps) => {
+const CustomButtonTable = ({ fetchData, selectedRows, openAdd, handleDelete }: CustomButtonTableProps) => {
     const intl = useTranslations("TableCustomButton")
     return (
         <div className="grid grid-cols-2 lg:flex gap-3 h-full place-items-center w-full lg:w-fit">
@@ -40,4 +40,4 @@ const CustomButton = ({ fetchData, selectedRows, openAdd, handleDelete }: Custom
     );
 };
 
-export default CustomButton;
+export default CustomButtonTable;
